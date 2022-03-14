@@ -1,0 +1,29 @@
+<h1>Stimulus Testing</h1>
+
+<div data-controller="alert">
+  <button data-action="click->alert#show">Alert me!</button>
+</div>
+
+<div data-controller="greeter">
+  <input type="text" 
+        data-greeter-target="name">
+  <button data-action="greeter#greet">Greet</button>
+  <div data-greeter-target="output"></div>
+</div>
+
+<hr>
+
+<div data-controller='clipboard'>
+  PIN: <input data-clipboard-target="source" type="text" value="1234" readonly>
+  <button data-action="clipboard#copy">Copy to Clipboard</button>
+</div>
+
+<div data-controller="clipboard">
+  PIN: <input data-clipboard-target="source" type="text" value="3737" readonly>
+  <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
+</div>
+
+<div data-controller="clipboard">
+  PIN: <input data-clipboard-target="source" type="text" value="1337" readonly>
+  <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
+</div>
