@@ -22,3 +22,15 @@
 .toggle--hide {
   display: none;
 }
+
+.counter--normal {
+  border: 0px;
+}
+
+.counter--warn {
+  border: 1px orange solid;
+}
+
+.counter--error {
+  border: 1px red solid;
+}

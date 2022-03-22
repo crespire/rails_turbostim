@@ -59,3 +59,16 @@
     <li>Item 2</li>
   </ul>
 </div>
+
+<hr>
+
+<h1>Length Limit</h1>
+<div data-controller="char-counter"
+     data-char-counter-max-value="280"
+     data-char-counter-normal-class="counter--normal"
+     data-char-counter-warn-class="counter--warn"
+     data-char-counter-error-class="counter--error">
+  <label>Input</label>
+  <input type="text" data-char-counter-target="source" data-action="input->char-counter#update" />
+  <div data-char-counter-target="display"></div>
+</div>
